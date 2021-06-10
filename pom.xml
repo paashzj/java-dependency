@@ -5,10 +5,10 @@
     <parent>
         <groupId>com.github.shoothzj</groupId>
         <artifactId>java-parent</artifactId>
-        <version>3.0.7.RELEASE</version>
+        <version>3.0.8.RELEASE</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.0.11.RELEASE</version>
+    <version>3.0.12.RELEASE</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
@@ -27,6 +27,8 @@
         <httpcli.version>4.5.13</httpcli.version>
         <mongodriver.version>4.2.3</mongodriver.version>
         <mybatis.version>3.5.7</mybatis.version>
+        <hikari.version>3.4.5</hikari.version>
+        <mysqldriver.version>8.0.25</mysqldriver.version>
         <curator.version>5.1.0</curator.version>
         <zookeeper.version>3.7.0</zookeeper.version>
         <bookkeeper.version>4.14.1</bookkeeper.version>
@@ -49,6 +51,7 @@
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <netty.version>4.1.65.Final</netty.version>
         <!-- test start -->
+        <junit.version>4.13.2</junit.version>
         <mockito.version>3.11.0</mockito.version>
         <!-- test end -->
     </properties>
@@ -254,6 +257,16 @@
                 <artifactId>mybatis</artifactId>
                 <version>${mybatis.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.zaxxer</groupId>
+                <artifactId>HikariCP</artifactId>
+                <version>${hikari.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysqldriver.version}</version>
+            </dependency>
             <!-- mybatis end -->
             <!--zookeeper start -->
             <dependency>
@@ -441,6 +454,12 @@
             </dependency>
             <!--netty end -->
             <!--test start -->
+            <!-- https://mvnrepository.com/artifact/junit/junit -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
