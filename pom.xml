@@ -5,7 +5,7 @@
     <parent>
         <groupId>com.github.shoothzj</groupId>
         <artifactId>java-parent</artifactId>
-        <version>3.0.8.RELEASE</version>
+        <version>3.0.9.RELEASE</version>
     </parent>
     <artifactId>java-dependency</artifactId>
     <version>3.0.12.RELEASE</version>
@@ -13,6 +13,7 @@
     <name>Java project dependency</name>
 
     <properties>
+        <!-- spring -->
         <springfox.version>3.0.0</springfox.version>
         <spring.version>5.3.7</spring.version>
         <springboot.version>2.5.0</springboot.version>
@@ -20,40 +21,62 @@
         <hibernate.version>7.0.1.Final</hibernate.version>
         <jakarta.version>1.3.5</jakarta.version>
         <kubectl.version>12.0.1</kubectl.version>
-        <jackson.version>2.12.3</jackson.version>
-        <protobuf.version>3.17.2</protobuf.version>
         <guava.version>30.1.1-jre</guava.version>
         <guice.version>5.0.1</guice.version>
         <httpcli.version>4.5.13</httpcli.version>
-        <mongodriver.version>4.2.3</mongodriver.version>
         <mybatis.version>3.5.7</mybatis.version>
         <hikari.version>3.4.5</hikari.version>
-        <mysqldriver.version>8.0.25</mysqldriver.version>
+        <!-- distribute -->
         <curator.version>5.1.0</curator.version>
         <zookeeper.version>3.7.0</zookeeper.version>
-        <bookkeeper.version>4.14.1</bookkeeper.version>
-        <log4j.version>2.14.1</log4j.version>
-        <slf4j.version>1.7.30</slf4j.version>
-        <bouncycastle.version>1.68</bouncycastle.version>
-        <lombok.version>1.18.20</lombok.version>
-        <kafka.version>2.8.0</kafka.version>
-        <rabbitmq-amqp-cli.version>5.12.0</rabbitmq-amqp-cli.version>
+        <etcd.version>0.5.7</etcd.version>
+        <!-- db -->
         <jedis.version>3.6.0</jedis.version>
         <lettuce.version>6.1.2.RELEASE</lettuce.version>
-        <lucene.version>8.8.2</lucene.version>
-        <es-cli.version>7.13.1</es-cli.version>
-        <quartz.version>2.3.2</quartz.version>
-        <snake-yaml.version>1.28</snake-yaml.version>
+        <es.version>7.13.1</es.version>
+        <mongodriver.version>4.2.3</mongodriver.version>
         <postgre.version>42.2.20</postgre.version>
+        <mysqldriver.version>8.0.25</mysqldriver.version>
+        <!-- message queue -->
+        <qpid.version>0.50.0</qpid.version>
+        <rabbitmq-amqp-cli.version>5.12.0</rabbitmq-amqp-cli.version>
+        <kafka.version>2.8.0</kafka.version>
+        <pulsar.version>2.7.2</pulsar.version>
+        <!-- stream process -->
+        <spark.version>3.1.2</spark.version>
+        <beam.version>2.30.0</beam.version>
+        <!-- config center -->
+        <apollo.version>1.8.0</apollo.version>
+        <!-- apm -->
+        <skywalking.version>8.5.0</skywalking.version>
+        <!-- other middleware -->
+        <bookkeeper.version>4.14.1</bookkeeper.version>
+        <quartz.version>2.3.2</quartz.version>
+        <!-- index -->
+        <lucene.version>8.8.2</lucene.version>
+        <!-- network comm -->
+        <netty.version>4.1.65.Final</netty.version>
+        <!-- tls -->
+        <bouncycastle.version>1.68</bouncycastle.version>
+        <!-- log -->
+        <log4j.version>2.14.1</log4j.version>
+        <slf4j.version>1.7.30</slf4j.version>
+        <!-- codec -->
+        <snake-yaml.version>1.28</snake-yaml.version>
+        <jackson.version>2.12.3</jackson.version>
+        <protobuf.version>3.17.2</protobuf.version>
+        <avro.version>1.10.2</avro.version>
+        <!-- tools -->
+        <jcommand.version>1.81</jcommand.version>
         <commons-io.version>2.9.0</commons-io.version>
         <commons-net.version>3.8.0</commons-net.version>
         <commons-email.version>1.5</commons-email.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
-        <netty.version>4.1.65.Final</netty.version>
-        <!-- test start -->
+        <lombok.version>1.18.20</lombok.version>
+        <transmittable-thread-local.version>2.12.1</transmittable-thread-local.version>
+        <!-- test -->
         <junit.version>4.13.2</junit.version>
         <mockito.version>3.11.0</mockito.version>
-        <!-- test end -->
     </properties>
 
     <dependencyManagement>
@@ -139,11 +162,6 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter-test</artifactId>
-                <version>${springboot.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-tomcat</artifactId>
                 <version>${springboot.version}</version>
             </dependency>
@@ -154,7 +172,22 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-webflux</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-jpa</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
                 <version>${springboot.version}</version>
             </dependency>
             <!-- spring data start -->
@@ -185,36 +218,6 @@
                 <version>${kubectl.version}</version>
             </dependency>
             <!-- kubectl end -->
-            <!--jackson start -->
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-annotations</artifactId>
-                <version>${jackson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-core</artifactId>
-                <version>${jackson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson.core</groupId>
-                <artifactId>jackson-databind</artifactId>
-                <version>${jackson.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.fasterxml.jackson.dataformat</groupId>
-                <artifactId>jackson-dataformat-yaml</artifactId>
-                <version>${jackson.version}</version>
-            </dependency>
-            <!--jackson end -->
-            <!-- protobuf start -->
-            <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
-            <dependency>
-                <groupId>com.google.protobuf</groupId>
-                <artifactId>protobuf-java</artifactId>
-                <version>${protobuf.version}</version>
-            </dependency>
-            <!-- protobuf end -->
             <!--guava start -->
             <dependency>
                 <groupId>com.google.guava</groupId>
@@ -243,14 +246,6 @@
                 <version>${httpcli.version}</version>
             </dependency>
             <!--http end -->
-            <!-- mongo start -->
-            <!-- https://mvnrepository.com/artifact/org.mongodb/mongodb-driver-sync -->
-            <dependency>
-                <groupId>org.mongodb</groupId>
-                <artifactId>mongodb-driver-sync</artifactId>
-                <version>${mongodriver.version}</version>
-            </dependency>
-            <!-- mongo end -->
             <!-- mybatis start -->
             <dependency>
                 <groupId>org.mybatis</groupId>
@@ -262,13 +257,8 @@
                 <artifactId>HikariCP</artifactId>
                 <version>${hikari.version}</version>
             </dependency>
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>${mysqldriver.version}</version>
-            </dependency>
             <!-- mybatis end -->
-            <!--zookeeper start -->
+            <!-- distribute -->
             <dependency>
                 <groupId>org.apache.curator</groupId>
                 <artifactId>curator-framework</artifactId>
@@ -289,8 +279,111 @@
                 <artifactId>zookeeper</artifactId>
                 <version>${zookeeper.version}</version>
             </dependency>
-            <!--zookeeper end -->
-            <!-- bookkeeper start -->
+            <dependency>
+                <groupId>io.etcd</groupId>
+                <artifactId>jetcd-core</artifactId>
+                <version>${etcd.version}</version>
+            </dependency>
+            <!-- db -->
+            <!--redis start -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.lettuce</groupId>
+                <artifactId>lettuce-core</artifactId>
+                <version>${lettuce.version}</version>
+            </dependency>
+            <!--redis end -->
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>elasticsearch-rest-high-level-client</artifactId>
+                <version>${es.version}</version>
+            </dependency>
+            <!-- mongo start -->
+            <dependency>
+                <groupId>org.mongodb</groupId>
+                <artifactId>mongodb-driver-sync</artifactId>
+                <version>${mongodriver.version}</version>
+            </dependency>
+            <!-- mongo end -->
+            <dependency>
+                <groupId>org.postgresql</groupId>
+                <artifactId>postgresql</artifactId>
+                <version>${postgre.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysqldriver.version}</version>
+            </dependency>
+            <!-- message queue -->
+            <dependency>
+                <groupId>org.apache.qpid</groupId>
+                <artifactId>qpid-jms-client</artifactId>
+                <version>${qpid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.rabbitmq</groupId>
+                <artifactId>amqp-client</artifactId>
+                <version>${rabbitmq-amqp-cli.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka-clients</artifactId>
+                <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.pulsar</groupId>
+                <artifactId>pulsar-client</artifactId>
+                <version>${pulsar.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.pulsar</groupId>
+                <artifactId>pulsar-client-admin</artifactId>
+                <version>${pulsar.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.pulsar</groupId>
+                <artifactId>pulsar-functions-api</artifactId>
+                <version>${pulsar.version}</version>
+            </dependency>
+            <!-- stream process -->
+            <dependency>
+                <groupId>org.apache.spark</groupId>
+                <artifactId>spark-sql_2.12</artifactId>
+                <version>${spark.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.beam</groupId>
+                <artifactId>beam-sdks-java-core</artifactId>
+                <version>${beam.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.beam</groupId>
+                <artifactId>beam-runners-direct-java</artifactId>
+                <version>${beam.version}</version>
+            </dependency>
+            <!-- config center -->
+            <dependency>
+                <groupId>com.ctrip.framework.apollo</groupId>
+                <artifactId>apollo-client</artifactId>
+                <version>${apollo.version}</version>
+            </dependency>
+            <!-- apm -->
+            <dependency>
+                <groupId>org.apache.skywalking</groupId>
+                <artifactId>apm-network</artifactId>
+                <version>${skywalking.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.skywalking</groupId>
+                <artifactId>apm-toolkit-trace</artifactId>
+                <version>${skywalking.version}</version>
+            </dependency>
+            <!-- other middleware -->
             <dependency>
                 <groupId>org.apache.bookkeeper</groupId>
                 <artifactId>bookkeeper-common</artifactId>
@@ -301,8 +394,55 @@
                 <artifactId>bookkeeper-server</artifactId>
                 <version>${bookkeeper.version}</version>
             </dependency>
-            <!-- bookkeeper end -->
-            <!--log start -->
+            <!-- quartz start -->
+            <dependency>
+                <groupId>org.quartz-scheduler</groupId>
+                <artifactId>quartz</artifactId>
+                <version>${quartz.version}</version>
+            </dependency>
+            <!-- quartz end -->
+            <!-- index -->
+            <!-- lucene start -->
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-core</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-queryparser</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.lucene</groupId>
+                <artifactId>lucene-analyzers-common</artifactId>
+                <version>${lucene.version}</version>
+            </dependency>
+            <!-- lucene end -->
+            <!-- network comm -->
+            <!-- netty start -->
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-all</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.netty</groupId>
+                <artifactId>netty-common</artifactId>
+                <version>${netty.version}</version>
+            </dependency>
+            <!-- tls -->
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcpkix-jdk15on</artifactId>
+                <version>${bouncycastle.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.bouncycastle</groupId>
+                <artifactId>bcprov-jdk15on</artifactId>
+                <version>${bouncycastle.version}</version>
+            </dependency>
+            <!-- log -->
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-api</artifactId>
@@ -328,98 +468,53 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j.version}</version>
             </dependency>
-            <!--log end -->
-            <!--ssl start -->
-            <dependency>
-                <groupId>org.bouncycastle</groupId>
-                <artifactId>bcpkix-jdk15on</artifactId>
-                <version>${bouncycastle.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.bouncycastle</groupId>
-                <artifactId>bcprov-jdk15on</artifactId>
-                <version>${bouncycastle.version}</version>
-            </dependency>
-            <!--ssl end -->
-            <!--lombok start -->
-            <dependency>
-                <groupId>org.projectlombok</groupId>
-                <artifactId>lombok</artifactId>
-                <version>${lombok.version}</version>
-            </dependency>
-            <!--lombok end -->
-            <!--kafka start -->
-            <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka-clients</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
-            <!--kafka end -->
-            <!-- rabbitmq start -->
-            <dependency>
-                <groupId>com.rabbitmq</groupId>
-                <artifactId>amqp-client</artifactId>
-                <version>${rabbitmq-amqp-cli.version}</version>
-            </dependency>
-            <!-- rabbitmq end -->
-            <!--redis start -->
-            <dependency>
-                <groupId>redis.clients</groupId>
-                <artifactId>jedis</artifactId>
-                <version>${jedis.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.lettuce</groupId>
-                <artifactId>lettuce-core</artifactId>
-                <version>${lettuce.version}</version>
-            </dependency>
-            <!--redis end -->
-            <!-- lucene start -->
-            <dependency>
-                <groupId>org.apache.lucene</groupId>
-                <artifactId>lucene-core</artifactId>
-                <version>${lucene.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.lucene</groupId>
-                <artifactId>lucene-queryparser</artifactId>
-                <version>${lucene.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.lucene</groupId>
-                <artifactId>lucene-analyzers-common</artifactId>
-                <version>${lucene.version}</version>
-            </dependency>
-            <!-- lucene end -->
-            <!-- elasticsearch start -->
-            <dependency>
-                <groupId>org.elasticsearch.client</groupId>
-                <artifactId>elasticsearch-rest-high-level-client</artifactId>
-                <version>${es-cli.version}</version>
-            </dependency>
-            <!-- elasticsearch end -->
-            <!--quartz start -->
-            <dependency>
-                <groupId>org.quartz-scheduler</groupId>
-                <artifactId>quartz</artifactId>
-                <version>${quartz.version}</version>
-            </dependency>
-            <!--quartz end -->
-            <!--yaml start -->
+            <!-- codec -->
             <dependency>
                 <groupId>org.yaml</groupId>
                 <artifactId>snakeyaml</artifactId>
                 <version>${snake-yaml.version}</version>
             </dependency>
-            <!--yaml end -->
-            <!--postgre start -->
             <dependency>
-                <groupId>org.postgresql</groupId>
-                <artifactId>postgresql</artifactId>
-                <version>${postgre.version}</version>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.version}</version>
             </dependency>
-            <!--postgre end -->
-            <!--common start -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.dataformat</groupId>
+                <artifactId>jackson-dataformat-yaml</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.protobuf</groupId>
+                <artifactId>protobuf-java</artifactId>
+                <version>${protobuf.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.avro</groupId>
+                <artifactId>avro-compiler</artifactId>
+                <version>${avro.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.avro</groupId>
+                <artifactId>avro-maven-plugin</artifactId>
+                <version>${avro.version}</version>
+            </dependency>
+            <!-- tools -->
+            <dependency>
+                <groupId>com.beust</groupId>
+                <artifactId>jcommander</artifactId>
+                <version>${jcommand.version}</version>
+            </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
@@ -440,19 +535,18 @@
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
             </dependency>
-            <!--common end -->
-            <!--netty start -->
+            <!-- lombok start -->
             <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-all</artifactId>
-                <version>${netty.version}</version>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
             </dependency>
+            <!-- lombok end -->
             <dependency>
-                <groupId>io.netty</groupId>
-                <artifactId>netty-common</artifactId>
-                <version>${netty.version}</version>
+                <groupId>com.alibaba</groupId>
+                <artifactId>transmittable-thread-local</artifactId>
+                <version>${transmittable-thread-local.version}</version>
             </dependency>
-            <!--netty end -->
             <!--test start -->
             <!-- https://mvnrepository.com/artifact/junit/junit -->
             <dependency>
