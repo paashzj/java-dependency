@@ -8,16 +8,16 @@
         <version>3.0.9.RELEASE</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.0.13.RELEASE</version>
+    <version>3.0.14.RELEASE</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
     <properties>
         <!-- spring -->
         <springfox.version>3.0.0</springfox.version>
-        <spring.version>5.3.7</spring.version>
-        <springboot.version>2.5.0</springboot.version>
-        <springdatamongo.version>3.2.1.RELEASE</springdatamongo.version>
+        <spring.version>5.3.8</spring.version>
+        <springboot.version>2.5.1</springboot.version>
+        <springdatamongo.version>3.2.1</springdatamongo.version>
         <hibernate.version>7.0.1.Final</hibernate.version>
         <jakarta.version>1.3.5</jakarta.version>
         <kubectl.version>12.0.1</kubectl.version>
