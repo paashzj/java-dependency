@@ -8,7 +8,7 @@
         <version>3.0.9.RELEASE</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.0.15.RELEASE</version>
+    <version>3.1.0</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
