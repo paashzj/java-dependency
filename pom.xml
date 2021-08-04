@@ -21,7 +21,7 @@
         <!-- spring cloud -->
         <springcloud.version>3.0.3</springcloud.version>
         <!-- servicecomb-->
-        <servicecomb.version>2.3.2</servicecomb.version>
+        <servicecomb.version>2.3.5</servicecomb.version>
         <!-- web container -->
         <tomcat.version>9.0.50</tomcat.version>
         <jetty.version>9.4.42.v20210604</jetty.version>
@@ -183,6 +183,11 @@
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-actuator</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-loader</artifactId>
                 <version>${springboot.version}</version>
             </dependency>
@@ -280,6 +285,11 @@
                 <artifactId>spring-cloud-context</artifactId>
                 <version>${springcloud.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-gateway</artifactId>
+                <version>${springcloud.version}</version>
+            </dependency>
             <!-- servicecomb -->
             <dependency>
                 <groupId>org.apache.servicecomb</groupId>
@@ -332,6 +342,36 @@
                 <version>${servicecomb.version}</version>
             </dependency>
             <!-- web container -->
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-core</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-el</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-jasper</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-embed-websocket</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-jdbc</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.tomcat.embed</groupId>
+                <artifactId>tomcat-juli</artifactId>
+                <version>${tomcat.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-server</artifactId>
