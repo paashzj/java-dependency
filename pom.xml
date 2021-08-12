@@ -8,7 +8,7 @@
         <version>3.1.0</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.1.4</version>
+    <version>3.1.5</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
@@ -85,9 +85,11 @@
         <avro.version>1.10.2</avro.version>
         <!-- tools -->
         <jcommand.version>1.81</jcommand.version>
+        <commons-collections.version>4.0</commons-collections.version>
+        <commons-csv.version>1.4</commons-csv.version>
+        <commons-email.version>1.5</commons-email.version>
         <commons-io.version>2.9.0</commons-io.version>
         <commons-net.version>3.8.0</commons-net.version>
-        <commons-email.version>1.5</commons-email.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <lombok.version>1.18.20</lombok.version>
         <transmittable-thread-local.version>2.12.1</transmittable-thread-local.version>
@@ -240,6 +242,11 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-webflux</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-cassandra</artifactId>
                 <version>${springboot.version}</version>
             </dependency>
             <dependency>
@@ -840,6 +847,21 @@
                 <version>${jcommand.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons-collections.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-csv</artifactId>
+                <version>${commons-csv.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-email</artifactId>
+                <version>${commons-email.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons-io.version}</version>
@@ -848,11 +870,6 @@
                 <groupId>commons-net</groupId>
                 <artifactId>commons-net</artifactId>
                 <version>${commons-net.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-email</artifactId>
-                <version>${commons-email.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
