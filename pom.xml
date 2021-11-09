@@ -8,7 +8,7 @@
         <version>3.1.0</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.1.5</version>
+    <version>3.1.6</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
@@ -16,73 +16,71 @@
         <!-- spring -->
         <springfox.version>3.0.0</springfox.version>
         <spring.version>5.3.9</spring.version>
-        <springboot.version>2.5.3</springboot.version>
+        <springboot.version>2.4.10</springboot.version>
         <springdatamongo.version>3.2.1</springdatamongo.version>
         <!-- spring cloud -->
-        <springcloud.version>3.0.3</springcloud.version>
+        <springcloud.version>3.0.4</springcloud.version>
         <!-- servicecomb-->
-        <servicecomb.version>2.3.5</servicecomb.version>
+        <servicecomb.version>2.5.3</servicecomb.version>
         <!-- web container -->
-        <tomcat.version>9.0.50</tomcat.version>
-        <jetty.version>9.4.42.v20210604</jetty.version>
+        <tomcat.version>9.0.54</tomcat.version>
+        <jetty.version>9.4.44.v20210927</jetty.version>
         <hibernate.version>7.0.1.Final</hibernate.version>
         <jakarta.version>1.3.5</jakarta.version>
-        <kubectl.version>12.0.1</kubectl.version>
-        <caffeine.version>3.0.3</caffeine.version>
-        <guava.version>30.1.1-jre</guava.version>
+        <kubectl.version>13.0.1</kubectl.version>
+        <caffeine.version>3.0.4</caffeine.version>
+        <guava.version>31.0.1-jre</guava.version>
         <guice.version>5.0.1</guice.version>
         <httpcli.version>4.5.13</httpcli.version>
-        <httpcore.version>4.4.14</httpcore.version>
-        <httpasyncclient.version>4.1.4</httpasyncclient.version>
         <mybatis.version>3.5.7</mybatis.version>
-        <hikari.version>3.4.5</hikari.version>
+        <hikari.version>5.0.0</hikari.version>
         <!-- distribute -->
-        <curator.version>5.1.0</curator.version>
+        <curator.version>5.2.0</curator.version>
         <zookeeper.version>3.7.0</zookeeper.version>
-        <etcd.version>0.5.7</etcd.version>
+        <etcd.version>0.5.11</etcd.version>
         <!-- db -->
-        <jedis.version>3.6.0</jedis.version>
-        <lettuce.version>6.1.2.RELEASE</lettuce.version>
-        <es.version>7.13.1</es.version>
-        <mongodriver.version>4.2.3</mongodriver.version>
-        <postgre.version>42.2.20</postgre.version>
-        <mysqldriver.version>8.0.25</mysqldriver.version>
+        <jedis.version>3.7.0</jedis.version>
+        <lettuce.version>6.1.5.RELEASE</lettuce.version>
+        <es.version>7.15.1</es.version>
+        <mongodriver.version>4.3.4</mongodriver.version>
+        <postgre.version>42.3.1</postgre.version>
+        <mysqldriver.version>8.0.27</mysqldriver.version>
         <!-- message queue -->
-        <qpid.version>0.50.0</qpid.version>
-        <rabbitmq-amqp-cli.version>5.12.0</rabbitmq-amqp-cli.version>
-        <kafka.version>2.8.0</kafka.version>
-        <pulsar.version>2.8.0</pulsar.version>
+        <qpid.version>1.3.0</qpid.version>
+        <rabbitmq-amqp-cli.version>5.13.1</rabbitmq-amqp-cli.version>
+        <kafka.version>3.0.0</kafka.version>
+        <pulsar.version>2.8.1</pulsar.version>
         <!-- stream process -->
-        <spark.version>3.1.2</spark.version>
-        <beam.version>2.30.0</beam.version>
+        <spark.version>3.2.0</spark.version>
+        <beam.version>2.33.0</beam.version>
         <!-- config center -->
-        <apollo.version>1.8.0</apollo.version>
+        <apollo.version>1.9.1</apollo.version>
         <!-- apm -->
-        <skywalking.version>8.5.0</skywalking.version>
+        <skywalking.version>8.8.1</skywalking.version>
         <!-- other middleware -->
-        <bookkeeper.version>4.14.1</bookkeeper.version>
+        <bookkeeper.version>4.14.2</bookkeeper.version>
         <quartz.version>2.3.2</quartz.version>
         <!-- index -->
-        <lucene.version>8.8.2</lucene.version>
+        <lucene.version>8.10.1</lucene.version>
         <!-- network protocol -->
         <jsch.version>0.1.55</jsch.version>
         <mqtt-cli.version>1.2.5</mqtt-cli.version>
         <!-- network comm -->
         <vertx.version>4.1.2</vertx.version>
-        <netty.version>4.1.66.Final</netty.version>
+        <netty.version>4.1.70.Final</netty.version>
         <!-- tls -->
         <bouncycastle.version>1.69</bouncycastle.version>
         <!-- metrics -->
-        <micrometer.version>1.7.2</micrometer.version>
+        <micrometer.version>1.7.5</micrometer.version>
         <!-- log -->
         <log4j.version>2.14.1</log4j.version>
-        <slf4j.version>1.7.30</slf4j.version>
+        <slf4j.version>1.7.32</slf4j.version>
         <!-- codec -->
         <snake-yaml.version>1.29</snake-yaml.version>
-        <jackson.version>2.12.4</jackson.version>
+        <jackson.version>2.13.0</jackson.version>
         <json-path.version>2.6.0</json-path.version>
-        <protobuf.version>3.17.3</protobuf.version>
-        <avro.version>1.10.2</avro.version>
+        <protobuf.version>3.19.1</protobuf.version>
+        <avro.version>1.11.0</avro.version>
         <!-- tools -->
         <jcommand.version>1.81</jcommand.version>
         <commons-collections.version>4.0</commons-collections.version>
@@ -91,11 +89,11 @@
         <commons-io.version>2.9.0</commons-io.version>
         <commons-net.version>3.8.0</commons-net.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
-        <lombok.version>1.18.20</lombok.version>
+        <lombok.version>1.18.22</lombok.version>
         <transmittable-thread-local.version>2.12.1</transmittable-thread-local.version>
         <!-- test -->
         <junit.version>4.13.2</junit.version>
-        <mockito.version>3.11.0</mockito.version>
+        <mockito.version>3.12.4</mockito.version>
     </properties>
 
     <dependencyManagement>
