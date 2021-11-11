@@ -8,7 +8,7 @@
         <version>3.1.0</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.1.6</version>
+    <version>3.1.7</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
@@ -19,7 +19,7 @@
         <springboot.version>2.4.10</springboot.version>
         <springdatamongo.version>3.2.1</springdatamongo.version>
         <!-- spring cloud -->
-        <springcloud.version>3.0.4</springcloud.version>
+        <spring-cloud.version>3.0.4</spring-cloud.version>
         <!-- servicecomb-->
         <servicecomb.version>2.5.3</servicecomb.version>
         <!-- web container -->
@@ -45,6 +45,7 @@
         <mongodriver.version>4.3.4</mongodriver.version>
         <postgre.version>42.3.1</postgre.version>
         <mysqldriver.version>8.0.27</mysqldriver.version>
+        <calcite.version>1.28.0</calcite.version>
         <!-- message queue -->
         <qpid.version>1.3.0</qpid.version>
         <rabbitmq-amqp-cli.version>5.13.1</rabbitmq-amqp-cli.version>
@@ -63,6 +64,7 @@
         <!-- index -->
         <lucene.version>8.10.1</lucene.version>
         <!-- network protocol -->
+        <ssd-core.version>2.7.0</ssd-core.version>
         <jsch.version>0.1.55</jsch.version>
         <mqtt-cli.version>1.2.5</mqtt-cli.version>
         <!-- network comm -->
@@ -75,6 +77,8 @@
         <!-- log -->
         <log4j.version>2.14.1</log4j.version>
         <slf4j.version>1.7.32</slf4j.version>
+        <!-- excel -->
+        <poi.version>5.1.0</poi.version>
         <!-- codec -->
         <snake-yaml.version>1.29</snake-yaml.version>
         <jackson.version>2.13.0</jackson.version>
@@ -83,14 +87,17 @@
         <avro.version>1.11.0</avro.version>
         <!-- tools -->
         <jcommand.version>1.81</jcommand.version>
-        <commons-collections.version>4.0</commons-collections.version>
-        <commons-csv.version>1.4</commons-csv.version>
+        <commons-codec.version>1.15</commons-codec.version>
+        <commons-configuration2.version>2.7</commons-configuration2.version>
+        <commons-collections.version>4.4</commons-collections.version>
+        <commons-csv.version>1.9.0</commons-csv.version>
+        <commons-digester3.version>3.2</commons-digester3.version>
         <commons-email.version>1.5</commons-email.version>
-        <commons-io.version>2.9.0</commons-io.version>
+        <commons-io.version>2.11.0</commons-io.version>
         <commons-net.version>3.8.0</commons-net.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <lombok.version>1.18.22</lombok.version>
-        <transmittable-thread-local.version>2.12.1</transmittable-thread-local.version>
+        <transmittable-thread-local.version>2.12.2</transmittable-thread-local.version>
         <!-- test -->
         <junit.version>4.13.2</junit.version>
         <mockito.version>3.12.4</mockito.version>
@@ -283,23 +290,23 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-commons</artifactId>
-                <version>${springcloud.version}</version>
+                <version>${spring-cloud.version}</version>
             </dependency>
             <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-commons -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-context</artifactId>
-                <version>${springcloud.version}</version>
+                <version>${spring-cloud.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
-                <version>${springcloud.version}</version>
+                <version>${spring-cloud.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-gateway</artifactId>
-                <version>${springcloud.version}</version>
+                <version>${spring-cloud.version}</version>
             </dependency>
             <!-- servicecomb -->
             <dependency>
@@ -531,6 +538,11 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysqldriver.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.calcite</groupId>
+                <artifactId>calcite-core</artifactId>
+                <version>${calcite.version}</version>
+            </dependency>
             <!-- message queue -->
             <dependency>
                 <groupId>org.apache.qpid</groupId>
@@ -632,6 +644,11 @@
             </dependency>
             <!-- lucene end -->
             <!-- network protocol -->
+            <dependency>
+                <groupId>org.apache.sshd</groupId>
+                <artifactId>sshd-core</artifactId>
+                <version>${ssd-core.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.jcraft</groupId>
                 <artifactId>jsch</artifactId>
@@ -767,6 +784,12 @@
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j.version}</version>
             </dependency>
+            <!-- excel -->
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>${poi.version}</version>
+            </dependency>
             <!-- codec -->
             <dependency>
                 <groupId>org.yaml</groupId>
@@ -845,6 +868,16 @@
                 <version>${jcommand.version}</version>
             </dependency>
             <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons-codec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-configuration2</artifactId>
+                <version>${commons-configuration2.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-collections4</artifactId>
                 <version>${commons-collections.version}</version>
@@ -853,6 +886,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-csv</artifactId>
                 <version>${commons-csv.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-digester3</artifactId>
+                <version>${commons-digester3.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.commons</groupId>
