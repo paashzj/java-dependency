@@ -5,10 +5,10 @@
     <parent>
         <groupId>com.github.shoothzj</groupId>
         <artifactId>java-parent</artifactId>
-        <version>3.1.0</version>
+        <version>3.1.1</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.1.7</version>
+    <version>3.1.8</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
@@ -45,6 +45,8 @@
         <mongodriver.version>4.3.4</mongodriver.version>
         <postgre.version>42.3.1</postgre.version>
         <mysqldriver.version>8.0.27</mysqldriver.version>
+        <mariadb-java-client.version>2.7.4</mariadb-java-client.version>
+        <h2.version>1.4.200</h2.version>
         <calcite.version>1.28.0</calcite.version>
         <!-- message queue -->
         <qpid.version>1.3.0</qpid.version>
@@ -59,7 +61,7 @@
         <!-- apm -->
         <skywalking.version>8.8.1</skywalking.version>
         <!-- other middleware -->
-        <bookkeeper.version>4.14.2</bookkeeper.version>
+        <bookkeeper.version>4.14.3</bookkeeper.version>
         <quartz.version>2.3.2</quartz.version>
         <!-- index -->
         <lucene.version>8.10.1</lucene.version>
@@ -96,6 +98,7 @@
         <commons-io.version>2.11.0</commons-io.version>
         <commons-net.version>3.8.0</commons-net.version>
         <commons-lang3.version>3.12.0</commons-lang3.version>
+        <commons-pool2.version>2.11.1</commons-pool2.version>
         <lombok.version>1.18.22</lombok.version>
         <transmittable-thread-local.version>2.12.2</transmittable-thread-local.version>
         <!-- test -->
@@ -539,6 +542,16 @@
                 <version>${mysqldriver.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.mariadb.jdbc</groupId>
+                <artifactId>mariadb-java-client</artifactId>
+                <version>${mariadb-java-client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${h2.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.apache.calcite</groupId>
                 <artifactId>calcite-core</artifactId>
                 <version>${calcite.version}</version>
@@ -911,6 +924,11 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-lang3</artifactId>
                 <version>${commons-lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${commons-pool2.version}</version>
             </dependency>
             <!-- lombok start -->
             <dependency>
