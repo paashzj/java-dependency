@@ -8,7 +8,7 @@
         <version>3.1.2</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.1.9</version>
+    <version>3.1.10</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
@@ -20,7 +20,7 @@
         <springdatamongo.version>3.2.1</springdatamongo.version>
         <!-- spring cloud -->
         <spring-cloud.version>3.0.4</spring-cloud.version>
-        <!-- servicecomb-->
+        <!-- servicecomb -->
         <servicecomb.version>2.5.3</servicecomb.version>
         <!-- web container -->
         <tomcat.version>9.0.54</tomcat.version>
@@ -42,7 +42,7 @@
         <jedis.version>3.7.0</jedis.version>
         <lettuce.version>6.1.5.RELEASE</lettuce.version>
         <es.version>7.15.1</es.version>
-        <mongodriver.version>4.3.4</mongodriver.version>
+        <mongodriver.version>4.4.0</mongodriver.version>
         <postgre.version>42.3.1</postgre.version>
         <mysqldriver.version>8.0.27</mysqldriver.version>
         <mariadb-java-client.version>2.7.4</mariadb-java-client.version>
@@ -52,7 +52,7 @@
         <qpid.version>1.3.0</qpid.version>
         <rabbitmq-amqp-cli.version>5.13.1</rabbitmq-amqp-cli.version>
         <kafka.version>3.0.0</kafka.version>
-        <pulsar.version>2.8.1</pulsar.version>
+        <pulsar.version>2.9.0</pulsar.version>
         <!-- stream process -->
         <spark.version>3.2.0</spark.version>
         <beam.version>2.33.0</beam.version>
@@ -101,8 +101,12 @@
         <commons-pool2.version>2.11.1</commons-pool2.version>
         <lombok.version>1.18.22</lombok.version>
         <transmittable-thread-local.version>2.12.2</transmittable-thread-local.version>
+        <!-- huawei cloud -->
+        <huaweicloud-sdk-java-dis.version>1.3.14</huaweicloud-sdk-java-dis.version>
+        <huaweicloud-sdk.version>3.0.69</huaweicloud-sdk.version>
         <!-- test -->
         <junit.version>4.13.2</junit.version>
+        <jupiter.version>5.8.1</jupiter.version>
         <mockito.version>3.12.4</mockito.version>
     </properties>
 
@@ -278,6 +282,11 @@
                 <version>${springboot.version}</version>
             </dependency>
             <!-- spring data start -->
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-jpa</artifactId>
+                <version>${springboot.version}</version>
+            </dependency>
             <dependency>
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-redis</artifactId>
@@ -574,12 +583,22 @@
             </dependency>
             <dependency>
                 <groupId>org.apache.pulsar</groupId>
+                <artifactId>pulsar-broker</artifactId>
+                <version>${pulsar.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.pulsar</groupId>
                 <artifactId>pulsar-client</artifactId>
                 <version>${pulsar.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.pulsar</groupId>
                 <artifactId>pulsar-client-admin</artifactId>
+                <version>${pulsar.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.pulsar</groupId>
+                <artifactId>pulsar-common</artifactId>
                 <version>${pulsar.version}</version>
             </dependency>
             <dependency>
@@ -942,12 +961,39 @@
                 <artifactId>transmittable-thread-local</artifactId>
                 <version>${transmittable-thread-local.version}</version>
             </dependency>
+            <!-- huawei cloud start -->
+            <dependency>
+                <groupId>com.huaweicloud.dis</groupId>
+                <artifactId>huaweicloud-sdk-java-dis</artifactId>
+                <version>${huaweicloud-sdk-java-dis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaweicloud.sdk</groupId>
+                <artifactId>huaweicloud-sdk-core</artifactId>
+                <version>${huaweicloud-sdk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaweicloud.sdk</groupId>
+                <artifactId>huaweicloud-sdk-functiongraph</artifactId>
+                <version>${huaweicloud-sdk.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.huaweicloud.sdk</groupId>
+                <artifactId>huaweicloud-sdk-lts</artifactId>
+                <version>${huaweicloud-sdk.version}</version>
+            </dependency>
+            <!-- huawei cloud end -->
             <!--test start -->
             <!-- https://mvnrepository.com/artifact/junit/junit -->
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>${jupiter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mockito</groupId>
