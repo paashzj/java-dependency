@@ -8,87 +8,87 @@
         <version>3.1.2</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.1.10</version>
+    <version>3.1.11</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
     <properties>
         <!-- spring -->
         <springfox.version>3.0.0</springfox.version>
-        <spring.version>5.3.9</spring.version>
-        <springboot.version>2.4.10</springboot.version>
-        <springdatamongo.version>3.2.1</springdatamongo.version>
+        <spring.version>5.3.13</spring.version>
+        <springboot.version>2.6.1</springboot.version>
+        <spring-data-mongodb.version>3.3.0</spring-data-mongodb.version>
         <!-- spring cloud -->
-        <spring-cloud.version>3.0.4</spring-cloud.version>
+        <spring-cloud.version>3.1.0</spring-cloud.version>
         <!-- servicecomb -->
-        <servicecomb.version>2.5.3</servicecomb.version>
+        <servicecomb.version>2.6.0</servicecomb.version>
         <!-- web container -->
-        <tomcat.version>9.0.54</tomcat.version>
+        <tomcat.version>9.0.56</tomcat.version>
         <jetty.version>9.4.44.v20210927</jetty.version>
-        <hibernate.version>7.0.1.Final</hibernate.version>
-        <jakarta.version>1.3.5</jakarta.version>
-        <kubectl.version>13.0.1</kubectl.version>
-        <caffeine.version>3.0.4</caffeine.version>
+        <hibernate.version>7.0.2.Final</hibernate.version>
+        <jakarta.version>2.0.0</jakarta.version>
+        <kubectl.version>14.0.0</kubectl.version>
+        <caffeine.version>3.0.5</caffeine.version>
         <guava.version>31.0.1-jre</guava.version>
         <guice.version>5.0.1</guice.version>
         <httpcli.version>4.5.13</httpcli.version>
-        <mybatis.version>3.5.7</mybatis.version>
+        <mybatis.version>3.5.8</mybatis.version>
         <hikari.version>5.0.0</hikari.version>
         <!-- distribute -->
         <curator.version>5.2.0</curator.version>
         <zookeeper.version>3.7.0</zookeeper.version>
-        <etcd.version>0.5.11</etcd.version>
+        <etcd.version>0.6.1</etcd.version>
         <!-- db -->
-        <jedis.version>3.7.0</jedis.version>
+        <jedis.version>4.0.0</jedis.version>
         <lettuce.version>6.1.5.RELEASE</lettuce.version>
-        <es.version>7.15.1</es.version>
-        <mongodriver.version>4.4.0</mongodriver.version>
-        <postgre.version>42.3.1</postgre.version>
-        <mysqldriver.version>8.0.27</mysqldriver.version>
+        <elasticsearch.version>7.16.2</elasticsearch.version>
+        <mongo-driver-sync.version>4.4.0</mongo-driver-sync.version>
+        <postgresql.version>42.3.1</postgresql.version>
+        <mysql-connector.version>8.0.27</mysql-connector.version>
         <mariadb-java-client.version>2.7.4</mariadb-java-client.version>
-        <h2.version>1.4.200</h2.version>
+        <h2.version>2.0.202</h2.version>
         <calcite.version>1.28.0</calcite.version>
         <!-- message queue -->
-        <qpid.version>1.3.0</qpid.version>
-        <rabbitmq-amqp-cli.version>5.13.1</rabbitmq-amqp-cli.version>
+        <qpid-jms-client.version>1.4.1</qpid-jms-client.version>
+        <amqp-client.version>5.14.0</amqp-client.version>
         <kafka.version>3.0.0</kafka.version>
         <pulsar.version>2.9.0</pulsar.version>
         <!-- stream process -->
         <spark.version>3.2.0</spark.version>
-        <beam.version>2.33.0</beam.version>
+        <beam.version>2.34.0</beam.version>
         <!-- config center -->
         <apollo.version>1.9.1</apollo.version>
         <!-- apm -->
-        <skywalking.version>8.8.1</skywalking.version>
+        <skywalking.version>8.9.1</skywalking.version>
         <!-- other middleware -->
         <bookkeeper.version>4.14.3</bookkeeper.version>
         <quartz.version>2.3.2</quartz.version>
         <!-- index -->
         <lucene.version>8.10.1</lucene.version>
         <!-- network protocol -->
-        <ssd-core.version>2.7.0</ssd-core.version>
+        <sshd-core.version>2.8.0</sshd-core.version>
         <jsch.version>0.1.55</jsch.version>
         <mqtt-cli.version>1.2.5</mqtt-cli.version>
         <!-- network comm -->
-        <vertx.version>4.1.2</vertx.version>
-        <netty.version>4.1.70.Final</netty.version>
+        <vertx.version>4.2.3</vertx.version>
+        <netty.version>4.1.72.Final</netty.version>
         <!-- tls -->
-        <bouncycastle.version>1.69</bouncycastle.version>
+        <bouncycastle.version>1.70</bouncycastle.version>
         <!-- metrics -->
-        <micrometer.version>1.7.5</micrometer.version>
+        <micrometer.version>1.8.1</micrometer.version>
         <!-- log -->
-        <log4j.version>2.14.1</log4j.version>
+        <log4j.version>2.17.0</log4j.version>
         <slf4j.version>1.7.32</slf4j.version>
         <!-- excel -->
         <poi.version>5.1.0</poi.version>
         <!-- codec -->
-        <snake-yaml.version>1.29</snake-yaml.version>
-        <jackson.version>2.13.0</jackson.version>
+        <snakeyaml.version>1.30</snakeyaml.version>
+        <jackson.version>2.13.1</jackson.version>
         <json-path.version>2.6.0</json-path.version>
         <protobuf.version>3.19.1</protobuf.version>
         <avro.version>1.11.0</avro.version>
         <!-- tools -->
-        <jcommand.version>1.81</jcommand.version>
+        <jcommander.version>1.81</jcommander.version>
         <commons-codec.version>1.15</commons-codec.version>
         <commons-configuration2.version>2.7</commons-configuration2.version>
         <commons-collections.version>4.4</commons-collections.version>
@@ -100,14 +100,16 @@
         <commons-lang3.version>3.12.0</commons-lang3.version>
         <commons-pool2.version>2.11.1</commons-pool2.version>
         <lombok.version>1.18.22</lombok.version>
-        <transmittable-thread-local.version>2.12.2</transmittable-thread-local.version>
+        <transmittable-thread-local.version>2.12.3</transmittable-thread-local.version>
         <!-- huawei cloud -->
         <huaweicloud-sdk-java-dis.version>1.3.14</huaweicloud-sdk-java-dis.version>
-        <huaweicloud-sdk.version>3.0.69</huaweicloud-sdk.version>
+        <huaweicloud-sdk.version>3.0.72</huaweicloud-sdk.version>
         <!-- test -->
         <junit.version>4.13.2</junit.version>
-        <jupiter.version>5.8.1</jupiter.version>
-        <mockito.version>3.12.4</mockito.version>
+        <jupiter.version>5.8.2</jupiter.version>
+        <testng.version>7.4.0</testng.version>
+        <mockito.version>4.2.0</mockito.version>
+        <powermock.version>2.0.9</powermock.version>
     </properties>
 
     <dependencyManagement>
@@ -295,7 +297,7 @@
             <dependency>
                 <groupId>org.springframework.data</groupId>
                 <artifactId>spring-data-mongodb</artifactId>
-                <version>${springdatamongo.version}</version>
+                <version>${spring-data-mongodb.version}</version>
             </dependency>
             <!--spring-boot end -->
             <!-- spring cloud -->
@@ -531,24 +533,24 @@
             <dependency>
                 <groupId>org.elasticsearch.client</groupId>
                 <artifactId>elasticsearch-rest-high-level-client</artifactId>
-                <version>${es.version}</version>
+                <version>${elasticsearch.version}</version>
             </dependency>
             <!-- mongo start -->
             <dependency>
                 <groupId>org.mongodb</groupId>
                 <artifactId>mongodb-driver-sync</artifactId>
-                <version>${mongodriver.version}</version>
+                <version>${mongo-driver-sync.version}</version>
             </dependency>
             <!-- mongo end -->
             <dependency>
                 <groupId>org.postgresql</groupId>
                 <artifactId>postgresql</artifactId>
-                <version>${postgre.version}</version>
+                <version>${postgresql.version}</version>
             </dependency>
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
-                <version>${mysqldriver.version}</version>
+                <version>${mysql-connector.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mariadb.jdbc</groupId>
@@ -569,12 +571,12 @@
             <dependency>
                 <groupId>org.apache.qpid</groupId>
                 <artifactId>qpid-jms-client</artifactId>
-                <version>${qpid.version}</version>
+                <version>${qpid-jms-client.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.rabbitmq</groupId>
                 <artifactId>amqp-client</artifactId>
-                <version>${rabbitmq-amqp-cli.version}</version>
+                <version>${amqp-client.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.kafka</groupId>
@@ -679,7 +681,7 @@
             <dependency>
                 <groupId>org.apache.sshd</groupId>
                 <artifactId>sshd-core</artifactId>
-                <version>${ssd-core.version}</version>
+                <version>${sshd-core.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.jcraft</groupId>
@@ -826,7 +828,7 @@
             <dependency>
                 <groupId>org.yaml</groupId>
                 <artifactId>snakeyaml</artifactId>
-                <version>${snake-yaml.version}</version>
+                <version>${snakeyaml.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.fasterxml.jackson.core</groupId>
@@ -897,7 +899,7 @@
             <dependency>
                 <groupId>com.beust</groupId>
                 <artifactId>jcommander</artifactId>
-                <version>${jcommand.version}</version>
+                <version>${jcommander.version}</version>
             </dependency>
             <dependency>
                 <groupId>commons-codec</groupId>
@@ -996,9 +998,29 @@
                 <version>${jupiter.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${testng.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
                 <version>${mockito.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-module-junit4</artifactId>
+                <version>${powermock.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-core</artifactId>
+                <version>${powermock.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.powermock</groupId>
+                <artifactId>powermock-module-testng</artifactId>
+                <version>${powermock.version}</version>
             </dependency>
             <!--test end -->
         </dependencies>
