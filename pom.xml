@@ -5,10 +5,10 @@
     <parent>
         <groupId>com.github.shoothzj</groupId>
         <artifactId>java-parent</artifactId>
-        <version>3.1.5</version>
+        <version>3.1.6</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.1.16</version>
+    <version>3.1.17</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
@@ -49,11 +49,11 @@
         <mysql-connector.version>8.0.27</mysql-connector.version>
         <mariadb-java-client.version>2.7.4</mariadb-java-client.version>
         <h2.version>2.0.202</h2.version>
-        <calcite.version>1.28.0</calcite.version>
+        <calcite.version>1.29.0</calcite.version>
         <!-- message queue -->
         <qpid-jms-client.version>1.4.1</qpid-jms-client.version>
         <amqp-client.version>5.14.0</amqp-client.version>
-        <kafka.version>3.0.0</kafka.version>
+        <kafka.version>3.1.0</kafka.version>
         <pulsar.version>2.9.1</pulsar.version>
         <!-- stream process -->
         <spark.version>3.2.0</spark.version>
@@ -63,7 +63,7 @@
         <!-- apm -->
         <skywalking.version>8.9.1</skywalking.version>
         <!-- other middleware -->
-        <bookkeeper.version>4.14.3</bookkeeper.version>
+        <bookkeeper.version>4.14.4</bookkeeper.version>
         <quartz.version>2.3.2</quartz.version>
         <!-- index -->
         <lucene.version>8.10.1</lucene.version>
@@ -73,20 +73,21 @@
         <mqtt-cli.version>1.2.5</mqtt-cli.version>
         <!-- network comm -->
         <vertx.version>4.2.3</vertx.version>
-        <netty.version>4.1.72.Final</netty.version>
+        <netty.version>4.1.74.Final</netty.version>
         <!-- tls -->
         <bouncycastle.version>1.70</bouncycastle.version>
         <!-- metrics -->
         <micrometer.version>1.8.1</micrometer.version>
         <!-- log -->
         <log4j.version>2.17.1</log4j.version>
-        <slf4j.version>1.7.32</slf4j.version>
+        <slf4j.version>1.7.36</slf4j.version>
         <!-- excel -->
         <poi.version>5.1.0</poi.version>
         <!-- codec -->
         <snakeyaml.version>1.30</snakeyaml.version>
         <jackson.version>2.13.1</jackson.version>
-        <json-path.version>2.6.0</json-path.version>
+        <json-path.version>2.7.0</json-path.version>
+        <json-smart.version>2.4.8</json-smart.version>
         <protobuf.version>3.19.1</protobuf.version>
         <avro.version>1.11.0</avro.version>
         <!-- tools -->
@@ -109,9 +110,11 @@
         <!-- test -->
         <jupiter.version>5.8.2</jupiter.version>
         <testng.version>7.4.0</testng.version>
+        <awaitility.version>4.1.1</awaitility.version>
+        <assertj-core.version>3.22.0</assertj-core.version>
         <mockito.version>4.2.0</mockito.version>
         <powermock.version>2.0.9</powermock.version>
-        <testcontainers.version>1.16.2</testcontainers.version>
+        <testcontainers.version>1.16.3</testcontainers.version>
     </properties>
 
     <dependencyManagement>
@@ -891,6 +894,11 @@
                 <version>${json-path.version}</version>
             </dependency>
             <dependency>
+                <groupId>net.minidev</groupId>
+                <artifactId>json-smart</artifactId>
+                <version>${json-smart.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>com.google.protobuf</groupId>
                 <artifactId>protobuf-java</artifactId>
                 <version>${protobuf.version}</version>
@@ -1012,6 +1020,16 @@
                 <version>${testng.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.awaitility</groupId>
+                <artifactId>awaitility</artifactId>
+                <version>${awaitility.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${assertj-core.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
                 <version>${mockito.version}</version>
@@ -1035,7 +1053,6 @@
                 <groupId>org.testcontainers</groupId>
                 <artifactId>testcontainers</artifactId>
                 <version>${testcontainers.version}</version>
-                <scope>test</scope>
             </dependency>
             <!--test end -->
         </dependencies>
