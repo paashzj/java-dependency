@@ -5,10 +5,10 @@
     <parent>
         <groupId>com.github.shoothzj</groupId>
         <artifactId>java-parent</artifactId>
-        <version>3.1.6</version>
+        <version>3.1.7</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.1.18</version>
+    <version>3.1.19</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
@@ -72,7 +72,7 @@
         <jsch.version>0.1.55</jsch.version>
         <mqtt-cli.version>1.2.5</mqtt-cli.version>
         <!-- network comm -->
-        <vertx.version>4.2.3</vertx.version>
+        <vertx.version>4.2.4</vertx.version>
         <netty.version>4.1.74.Final</netty.version>
         <!-- tls -->
         <bouncycastle.version>1.70</bouncycastle.version>
