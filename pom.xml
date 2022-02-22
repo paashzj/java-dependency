@@ -42,7 +42,7 @@
         <etcd.version>0.6.1</etcd.version>
         <!-- db -->
         <jedis.version>4.0.0</jedis.version>
-        <lettuce.version>6.1.5.RELEASE</lettuce.version>
+        <lettuce.version>6.1.6.RELEASE</lettuce.version>
         <elasticsearch.version>7.16.2</elasticsearch.version>
         <mongo-driver-sync.version>4.4.0</mongo-driver-sync.version>
         <postgresql.version>42.3.1</postgresql.version>
@@ -72,7 +72,7 @@
         <jsch.version>0.1.55</jsch.version>
         <mqtt-cli.version>1.2.5</mqtt-cli.version>
         <!-- network comm -->
-        <vertx.version>4.2.4</vertx.version>
+        <vertx.version>4.2.5</vertx.version>
         <netty.version>4.1.74.Final</netty.version>
         <!-- tls -->
         <bouncycastle.version>1.70</bouncycastle.version>
@@ -710,6 +710,11 @@
             <dependency>
                 <groupId>io.vertx</groupId>
                 <artifactId>vertx-core</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-web</artifactId>
                 <version>${vertx.version}</version>
             </dependency>
             <!-- netty start -->
