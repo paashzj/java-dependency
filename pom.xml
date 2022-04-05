@@ -38,7 +38,7 @@
         <hikari.version>5.0.0</hikari.version>
         <!-- distribute -->
         <curator.version>5.2.1</curator.version>
-        <zookeeper.version>3.7.0</zookeeper.version>
+        <zookeeper.version>3.8.0</zookeeper.version>
         <etcd.version>0.6.1</etcd.version>
         <!-- db -->
         <jedis.version>4.0.0</jedis.version>
