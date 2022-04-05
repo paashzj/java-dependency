@@ -37,7 +37,7 @@
         <mybatis.version>3.5.8</mybatis.version>
         <hikari.version>5.0.0</hikari.version>
         <!-- distribute -->
-        <curator.version>5.2.0</curator.version>
+        <curator.version>5.2.1</curator.version>
         <zookeeper.version>3.7.0</zookeeper.version>
         <etcd.version>0.6.1</etcd.version>
         <!-- db -->
