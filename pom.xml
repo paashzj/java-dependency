@@ -57,7 +57,7 @@
         <pulsar.version>2.9.1</pulsar.version>
         <!-- stream process -->
         <spark.version>3.2.0</spark.version>
-        <beam.version>2.34.0</beam.version>
+        <beam.version>2.37.0</beam.version>
         <!-- config center -->
         <apollo.version>1.9.2</apollo.version>
         <!-- apm -->
