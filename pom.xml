@@ -45,7 +45,7 @@
         <lettuce.version>6.1.6.RELEASE</lettuce.version>
         <elasticsearch.version>7.16.2</elasticsearch.version>
         <mongo-driver-sync.version>4.4.0</mongo-driver-sync.version>
-        <postgresql.version>42.3.1</postgresql.version>
+        <postgresql.version>42.3.3</postgresql.version>
         <mysql-connector.version>8.0.27</mysql-connector.version>
         <mariadb-java-client.version>2.7.4</mariadb-java-client.version>
         <h2.version>2.0.202</h2.version>
