@@ -106,7 +106,7 @@
         <transmittable-thread-local.version>2.12.3</transmittable-thread-local.version>
         <!-- huawei cloud -->
         <huaweicloud-sdk-java-dis.version>1.3.14</huaweicloud-sdk-java-dis.version>
-        <huaweicloud-sdk.version>3.0.72</huaweicloud-sdk.version>
+        <huaweicloud-sdk.version>3.0.82</huaweicloud-sdk.version>
         <!-- test -->
         <jupiter.version>5.8.2</jupiter.version>
         <testng.version>7.4.0</testng.version>
