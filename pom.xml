@@ -8,14 +8,14 @@
         <version>3.1.7</version>
     </parent>
     <artifactId>java-dependency</artifactId>
-    <version>3.1.21</version>
+    <version>3.1.22</version>
     <packaging>pom</packaging>
     <name>Java project dependency</name>
 
     <properties>
         <!-- spring -->
-        <springfox.version>3.0.0</springfox.version>
         <spring.version>5.3.18</spring.version>
+        <springdoc.version>1.6.6</springdoc.version>
         <springboot.version>2.6.6</springboot.version>
         <spring-data-jpa.version>2.6.0</spring-data-jpa.version>
         <spring-data-redis.version>2.6.0</spring-data-redis.version>
@@ -90,6 +90,8 @@
         <json-smart.version>2.4.8</json-smart.version>
         <protobuf.version>3.19.1</protobuf.version>
         <avro.version>1.11.0</avro.version>
+        <!-- compress -->
+        <snappy.version>1.1.8.4</snappy.version>
         <!-- tools -->
         <jcommander.version>1.81</jcommander.version>
         <commons-codec.version>1.15</commons-codec.version>
@@ -120,22 +122,6 @@
     <dependencyManagement>
         <dependencies>
             <!--spring start -->
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>${springfox.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger-ui</artifactId>
-                <version>${springfox.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-bean-validators</artifactId>
-                <version>${springfox.version}</version>
-            </dependency>
-            <!-- spring start -->
             <dependency>
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-aop</artifactId>
@@ -197,6 +183,13 @@
                 <version>${spring.version}</version>
             </dependency>
             <!--spring end -->
+            <!--spring doc start -->
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+            <!--spring doc end -->
             <!--spring-boot start -->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
@@ -923,6 +916,13 @@
                 <artifactId>avro-maven-plugin</artifactId>
                 <version>${avro.version}</version>
             </dependency>
+            <!-- compress start -->
+            <dependency>
+                <groupId>org.xerial.snappy</groupId>
+                <artifactId>snappy-java</artifactId>
+                <version>${snappy.version}</version>
+            </dependency>
+            <!-- compress end -->
             <!-- tools -->
             <dependency>
                 <groupId>com.beust</groupId>
