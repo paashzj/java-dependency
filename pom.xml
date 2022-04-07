@@ -93,7 +93,7 @@
         <!-- compress -->
         <snappy.version>1.1.8.4</snappy.version>
         <!-- tools -->
-        <jcommander.version>1.81</jcommander.version>
+        <jcommander.version>1.82</jcommander.version>
         <commons-codec.version>1.15</commons-codec.version>
         <commons-configuration2.version>2.7</commons-configuration2.version>
         <commons-collections.version>4.4</commons-collections.version>
