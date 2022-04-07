@@ -27,7 +27,7 @@
         <!-- web container -->
         <tomcat.version>9.0.60</tomcat.version>
         <jetty.version>9.4.46.v20220331</jetty.version>
-        <hibernate.version>6.2.3.Final</hibernate.version>
+        <hibernate.version>7.0.4.Final</hibernate.version>
         <jakarta.version>1.3.5</jakarta.version>
         <kubectl.version>14.0.0</kubectl.version>
         <caffeine.version>2.9.3</caffeine.version>
