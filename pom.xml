@@ -79,7 +79,7 @@
         <!-- metrics -->
         <micrometer.version>1.8.4</micrometer.version>
         <!-- log -->
-        <log4j.version>2.17.1</log4j.version>
+        <log4j.version>2.17.2</log4j.version>
         <slf4j.version>1.7.36</slf4j.version>
         <!-- excel -->
         <poi.version>5.1.0</poi.version>
