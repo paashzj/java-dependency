@@ -114,7 +114,7 @@
         <testng.version>7.5</testng.version>
         <awaitility.version>4.2.0</awaitility.version>
         <assertj-core.version>3.22.0</assertj-core.version>
-        <mockito.version>4.2.0</mockito.version>
+        <mockito.version>4.4.0</mockito.version>
         <powermock.version>2.0.9</powermock.version>
         <testcontainers.version>1.16.3</testcontainers.version>
     </properties>
