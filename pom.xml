@@ -73,7 +73,7 @@
         <jsch.version>0.1.55</jsch.version>
         <mqtt-cli.version>1.2.5</mqtt-cli.version>
         <!-- network comm -->
-        <vertx.version>4.2.6</vertx.version>
+        <vertx.version>4.2.7</vertx.version>
         <netty.version>4.1.76.Final</netty.version>
         <!-- tls -->
         <bouncycastle.version>1.70</bouncycastle.version>
