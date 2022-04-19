@@ -44,6 +44,7 @@
         <jedis.version>4.2.2</jedis.version>
         <lettuce.version>6.1.8.RELEASE</lettuce.version>
         <elasticsearch.version>7.17.2</elasticsearch.version>
+        <influxdb-client-java.version>6.0.0</influxdb-client-java.version>
         <mongo-driver-sync.version>4.6.0</mongo-driver-sync.version>
         <postgresql.version>42.3.4</postgresql.version>
         <mysql-connector.version>8.0.28</mysql-connector.version>
@@ -110,6 +111,8 @@
         <!-- huawei cloud -->
         <huaweicloud-sdk-java-dis.version>1.3.15</huaweicloud-sdk-java-dis.version>
         <huaweicloud-sdk.version>3.0.84</huaweicloud-sdk.version>
+        <!-- jetbrains -->
+        <annotations.version>13.0</annotations.version>
         <!-- test -->
         <jupiter.version>5.8.2</jupiter.version>
         <testng.version>7.5</testng.version>
@@ -527,6 +530,13 @@
                 <artifactId>elasticsearch-rest-high-level-client</artifactId>
                 <version>${elasticsearch.version}</version>
             </dependency>
+            <!-- influx start -->
+            <dependency>
+                <groupId>com.influxdb</groupId>
+                <artifactId>influxdb-client-java</artifactId>
+                <version>${influxdb-client-java.version}</version>
+            </dependency>
+            <!-- influx end -->
             <!-- mongo start -->
             <dependency>
                 <groupId>org.mongodb</groupId>
@@ -1019,6 +1029,13 @@
                 <version>${huaweicloud-sdk.version}</version>
             </dependency>
             <!-- huawei cloud end -->
+            <!-- jetbrains start -->
+            <dependency>
+                <groupId>org.jetbrains</groupId>
+                <artifactId>annotations</artifactId>
+                <version>${annotations.version}</version>
+            </dependency>
+            <!-- jetbrains end -->
             <!--test start -->
             <dependency>
                 <groupId>org.junit.jupiter</groupId>
