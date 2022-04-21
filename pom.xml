@@ -43,7 +43,7 @@
         <!-- db -->
         <jedis.version>4.2.2</jedis.version>
         <lettuce.version>6.1.8.RELEASE</lettuce.version>
-        <elasticsearch.version>7.17.2</elasticsearch.version>
+        <elasticsearch.version>7.17.3</elasticsearch.version>
         <influxdb-client-java.version>6.0.0</influxdb-client-java.version>
         <mongo-driver-sync.version>4.6.0</mongo-driver-sync.version>
         <postgresql.version>42.3.4</postgresql.version>
