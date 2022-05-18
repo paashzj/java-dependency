@@ -74,7 +74,7 @@
         <jsch.version>0.1.55</jsch.version>
         <mqtt-cli.version>1.2.5</mqtt-cli.version>
         <!-- network comm -->
-        <vertx.version>4.3.0</vertx.version>
+        <vertx.version>4.2.7</vertx.version>
         <netty.version>4.1.77.Final</netty.version>
         <!-- tls -->
         <bouncycastle.version>1.70</bouncycastle.version>
@@ -327,53 +327,10 @@
             <!-- servicecomb -->
             <dependency>
                 <groupId>org.apache.servicecomb</groupId>
-                <artifactId>java-chassis-core</artifactId>
+                <artifactId>java-chassis-dependencies</artifactId>
                 <version>${servicecomb.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.servicecomb</groupId>
-                <artifactId>java-chassis-spring-boot-starter-servlet</artifactId>
-                <version>${servicecomb.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.servicecomb</groupId>
-                <artifactId>registry-service-center</artifactId>
-                <version>${servicecomb.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.servicecomb</groupId>
-                <artifactId>config-cc</artifactId>
-                <version>${servicecomb.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.servicecomb</groupId>
-                <artifactId>solution-basic</artifactId>
-                <version>${servicecomb.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.servicecomb</groupId>
-                <artifactId>service-registry</artifactId>
-                <version>${servicecomb.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.servicecomb</groupId>
-                <artifactId>service-springmvc</artifactId>
-                <version>${servicecomb.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.servicecomb</groupId>
-                <artifactId>provider-pojo</artifactId>
-                <version>${servicecomb.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.servicecomb</groupId>
-                <artifactId>provider-springmvc</artifactId>
-                <version>${servicecomb.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.servicecomb</groupId>
-                <artifactId>handler-loadbalance</artifactId>
-                <version>${servicecomb.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <!-- web container -->
             <dependency>
