@@ -23,7 +23,7 @@
         <!-- spring cloud -->
         <spring-cloud.version>3.1.1</spring-cloud.version>
         <!-- servicecomb -->
-        <servicecomb.version>2.6.0</servicecomb.version>
+        <servicecomb.version>2.7.3</servicecomb.version>
         <!-- web container -->
         <tomcat.version>9.0.62</tomcat.version>
         <jetty.version>9.4.46.v20220331</jetty.version>
