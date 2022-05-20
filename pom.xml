@@ -25,7 +25,7 @@
         <!-- servicecomb -->
         <servicecomb.version>2.7.3</servicecomb.version>
         <!-- web container -->
-        <tomcat.version>9.0.62</tomcat.version>
+        <tomcat.version>9.0.63</tomcat.version>
         <jetty.version>9.4.46.v20220331</jetty.version>
         <hibernate.version>6.2.3.Final</hibernate.version>
         <jakarta.version>1.3.5</jakarta.version>
