@@ -57,7 +57,7 @@
         <!-- apm -->
         <skywalking.version>8.9.1</skywalking.version>
         <!-- other middleware -->
-        <bookkeeper.version>4.14.4</bookkeeper.version>
+        <bookkeeper.version>4.15.0</bookkeeper.version>
         <quartz.version>2.3.2</quartz.version>
         <!-- index -->
         <lucene.version>8.11.1</lucene.version>
