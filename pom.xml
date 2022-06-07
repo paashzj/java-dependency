@@ -52,7 +52,7 @@
         <spark.version>3.2.1</spark.version>
         <beam.version>2.39.0</beam.version>
         <!-- config center -->
-        <apollo.version>2.0.0</apollo.version>
+        <apollo.version>2.0.1</apollo.version>
         <!-- apm -->
         <skywalking.version>8.9.1</skywalking.version>
         <!-- other middleware -->
