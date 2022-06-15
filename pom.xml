@@ -49,7 +49,7 @@
         <pulsar.version>2.10.0</pulsar.version>
         <rocketmq.version>4.9.3</rocketmq.version>
         <!-- stream process -->
-        <spark.version>3.2.1</spark.version>
+        <spark.version>3.3.0</spark.version>
         <beam.version>2.39.0</beam.version>
         <!-- config center -->
         <apollo.version>2.0.1</apollo.version>
