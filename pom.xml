@@ -44,7 +44,7 @@
         <calcite.version>1.30.0</calcite.version>
         <!-- message queue -->
         <qpid-jms-client.version>2.0.0</qpid-jms-client.version>
-        <amqp-client.version>5.14.2</amqp-client.version>
+        <amqp-client.version>5.15.0</amqp-client.version>
         <kafka.version>3.2.0</kafka.version>
         <pulsar.version>2.10.0</pulsar.version>
         <rocketmq.version>4.9.3</rocketmq.version>
