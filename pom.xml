@@ -40,7 +40,7 @@
         <postgresql.version>42.4.0</postgresql.version>
         <mysql-connector.version>8.0.29</mysql-connector.version>
         <mariadb-java-client.version>2.7.5</mariadb-java-client.version>
-        <h2.version>2.1.212</h2.version>
+        <h2.version>2.1.214</h2.version>
         <calcite.version>1.30.0</calcite.version>
         <!-- message queue -->
         <qpid-jms-client.version>2.0.0</qpid-jms-client.version>
