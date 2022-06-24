@@ -14,10 +14,8 @@
 
     <properties>
         <!-- spring -->
-        <springboot.version>2.7.0</springboot.version>
+        <springboot.version>2.7.1</springboot.version>
         <springdoc.version>1.6.9</springdoc.version>
-        <!-- spring cloud -->
-        <spring-cloud.version>3.1.2</spring-cloud.version>
         <!-- servicecomb -->
         <servicecomb.version>2.7.4</servicecomb.version>
         <kubectl.version>15.0.1</kubectl.version>
@@ -46,6 +44,7 @@
         <qpid-jms-client.version>2.0.0</qpid-jms-client.version>
         <amqp-client.version>5.15.0</amqp-client.version>
         <kafka.version>3.2.0</kafka.version>
+        <pravega.version>0.11.0</pravega.version>
         <pulsar.version>2.10.0</pulsar.version>
         <rocketmq.version>4.9.3</rocketmq.version>
         <!-- stream process -->
@@ -59,7 +58,7 @@
         <bookkeeper.version>4.14.4</bookkeeper.version>
         <quartz.version>2.3.2</quartz.version>
         <!-- index -->
-        <lucene.version>8.11.2</lucene.version>
+        <lucene.version>8.11.1</lucene.version>
         <!-- network protocol -->
         <sshd-core.version>2.8.0</sshd-core.version>
         <jsch.version>0.1.55</jsch.version>
@@ -70,7 +69,7 @@
         <!-- tls -->
         <bouncycastle.version>1.70</bouncycastle.version>
         <!-- metrics -->
-        <dropwizard.version>4.2.10</dropwizard.version>
+        <dropwizard-metrics.version>4.2.10</dropwizard-metrics.version>
         <micrometer.version>1.9.1</micrometer.version>
         <!-- log -->
         <log4j.version>2.17.2</log4j.version>
@@ -102,7 +101,7 @@
         <transmittable-thread-local.version>2.13.0</transmittable-thread-local.version>
         <!-- huawei cloud -->
         <huaweicloud-sdk-java-dis.version>1.3.15</huaweicloud-sdk-java-dis.version>
-        <huaweicloud-sdk.version>3.0.93</huaweicloud-sdk.version>
+        <huaweicloud-sdk.version>3.0.92</huaweicloud-sdk.version>
         <!-- jetbrains -->
         <annotations.version>13.0</annotations.version>
         <!-- test -->
@@ -133,24 +132,10 @@
             <!-- spring cloud -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-commons</artifactId>
-                <version>${spring-cloud.version}</version>
-            </dependency>
-            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-commons -->
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-context</artifactId>
-                <version>${spring-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
-                <version>${spring-cloud.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-starter-gateway</artifactId>
-                <version>${spring-cloud.version}</version>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2021.0.3</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <!-- servicecomb -->
             <dependency>
@@ -344,6 +329,11 @@
                 <groupId>org.apache.kafka</groupId>
                 <artifactId>kafka-storage</artifactId>
                 <version>${kafka.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.pravega</groupId>
+                <artifactId>pravega-client</artifactId>
+                <version>${pravega.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.pulsar</groupId>
@@ -571,8 +561,10 @@
             <!-- metrics -->
             <dependency>
                 <groupId>io.dropwizard.metrics</groupId>
-                <artifactId>metrics-core</artifactId>
-                <version>${dropwizard.version}</version>
+                <artifactId>metrics-bom</artifactId>
+                <version>${dropwizard-metrics.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>io.micrometer</groupId>
