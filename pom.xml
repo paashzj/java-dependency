@@ -14,7 +14,7 @@
 
     <properties>
         <!-- spring -->
-        <springboot.version>2.7.1</springboot.version>
+        <springboot.version>2.7.2</springboot.version>
         <springdoc.version>1.6.9</springdoc.version>
         <!-- servicecomb -->
         <servicecomb.version>2.7.5</servicecomb.version>
