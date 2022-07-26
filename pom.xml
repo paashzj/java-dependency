@@ -37,7 +37,7 @@
         <iotdb.version>0.13.0</iotdb.version>
         <mongo-driver-sync.version>4.7.0</mongo-driver-sync.version>
         <postgresql.version>42.4.0</postgresql.version>
-        <mysql-connector.version>8.0.29</mysql-connector.version>
+        <mysql-connector.version>8.0.30</mysql-connector.version>
         <mariadb-java-client.version>2.7.6</mariadb-java-client.version>
         <h2.version>2.1.214</h2.version>
         <calcite.version>1.30.0</calcite.version>
