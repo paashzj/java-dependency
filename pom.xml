@@ -33,7 +33,7 @@
         <jedis.version>4.2.3</jedis.version>
         <redisson.version>3.17.5</redisson.version>
         <lettuce.version>6.2.0.RELEASE</lettuce.version>
-        <influxdb-client-java.version>6.3.0</influxdb-client-java.version>
+        <influxdb-client-java.version>6.4.0</influxdb-client-java.version>
         <iotdb.version>0.13.0</iotdb.version>
         <mongo-driver-sync.version>4.7.0</mongo-driver-sync.version>
         <postgresql.version>42.4.0</postgresql.version>
