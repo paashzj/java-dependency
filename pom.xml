@@ -70,7 +70,7 @@
         <!-- tls -->
         <bouncycastle.version>1.70</bouncycastle.version>
         <!-- metrics -->
-        <dropwizard-metrics.version>4.2.10</dropwizard-metrics.version>
+        <dropwizard-metrics.version>4.2.11</dropwizard-metrics.version>
         <micrometer.version>1.9.2</micrometer.version>
         <!-- log -->
         <log4j.version>2.18.0</log4j.version>
