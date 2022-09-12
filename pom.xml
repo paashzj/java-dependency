@@ -40,7 +40,7 @@
         <mysql-connector.version>8.0.30</mysql-connector.version>
         <mariadb-java-client.version>2.7.6</mariadb-java-client.version>
         <h2.version>2.1.214</h2.version>
-        <calcite.version>1.30.0</calcite.version>
+        <calcite.version>1.32.0</calcite.version>
         <!-- message queue -->
         <qpid-jms-client.version>2.0.0</qpid-jms-client.version>
         <amqp-client.version>5.15.0</amqp-client.version>
@@ -837,7 +837,7 @@
                 <plugin>
                     <groupId>com.github.spotbugs</groupId>
                     <artifactId>spotbugs-maven-plugin</artifactId>
-                    <version>4.7.1.1</version>
+                    <version>4.7.2.0</version>
                 </plugin>
                 <!-- test -->
                 <plugin>
