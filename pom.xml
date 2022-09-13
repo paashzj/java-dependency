@@ -78,7 +78,7 @@
         <!-- excel -->
         <poi.version>5.2.2</poi.version>
         <!-- codec -->
-        <snakeyaml.version>1.31</snakeyaml.version>
+        <snakeyaml.version>1.32</snakeyaml.version>
         <jackson.version>2.13.4</jackson.version>
         <json-path.version>2.7.0</json-path.version>
         <json-smart.version>2.4.8</json-smart.version>
