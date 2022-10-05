@@ -111,7 +111,7 @@
         <awaitility.version>4.2.0</awaitility.version>
         <assertj-core.version>3.23.1</assertj-core.version>
         <mockito.version>4.8.0</mockito.version>
-        <testcontainers.version>1.17.3</testcontainers.version>
+        <testcontainers.version>1.17.5</testcontainers.version>
     </properties>
 
     <dependencyManagement>
