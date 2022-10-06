@@ -48,9 +48,6 @@
         <pravega.version>0.12.0</pravega.version>
         <pulsar.version>2.10.1</pulsar.version>
         <rocketmq.version>4.9.3</rocketmq.version>
-        <!-- stream process -->
-        <spark.version>3.3.0</spark.version>
-        <beam.version>2.41.0</beam.version>
         <!-- config center -->
         <apollo.version>2.0.1</apollo.version>
         <!-- apm -->
@@ -387,22 +384,6 @@
                 <groupId>org.apache.rocketmq</groupId>
                 <artifactId>rocketmq-client</artifactId>
                 <version>${rocketmq.version}</version>
-            </dependency>
-            <!-- stream process -->
-            <dependency>
-                <groupId>org.apache.spark</groupId>
-                <artifactId>spark-sql_2.12</artifactId>
-                <version>${spark.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.beam</groupId>
-                <artifactId>beam-sdks-java-core</artifactId>
-                <version>${beam.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.beam</groupId>
-                <artifactId>beam-runners-direct-java</artifactId>
-                <version>${beam.version}</version>
             </dependency>
             <!-- config center -->
             <dependency>
