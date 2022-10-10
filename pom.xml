@@ -44,7 +44,6 @@
         <!-- message queue -->
         <qpid-jms-client.version>2.1.0</qpid-jms-client.version>
         <amqp-client.version>5.16.0</amqp-client.version>
-        <kafka.version>3.2.3</kafka.version>
         <pravega.version>0.12.0</pravega.version>
         <pulsar.version>2.10.1</pulsar.version>
         <rocketmq.version>4.9.3</rocketmq.version>
@@ -301,54 +300,9 @@
                 <version>${amqp-client.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka_2.13</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka-clients</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka-metadata</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka-raft</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka-server-common</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka-storage-api</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.kafka</groupId>
-                <artifactId>kafka-storage</artifactId>
-                <version>${kafka.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>io.pravega</groupId>
                 <artifactId>pravega-client</artifactId>
                 <version>${pravega.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.pulsar</groupId>
-                <artifactId>pulsar-broker</artifactId>
-                <version>${pulsar.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.pulsar</groupId>
-                <artifactId>pulsar-broker-common</artifactId>
-                <version>${pulsar.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.pulsar</groupId>
@@ -368,16 +322,6 @@
             <dependency>
                 <groupId>org.apache.pulsar</groupId>
                 <artifactId>pulsar-client-admin</artifactId>
-                <version>${pulsar.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.pulsar</groupId>
-                <artifactId>pulsar-common</artifactId>
-                <version>${pulsar.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.pulsar</groupId>
-                <artifactId>pulsar-functions-api</artifactId>
                 <version>${pulsar.version}</version>
             </dependency>
             <dependency>
