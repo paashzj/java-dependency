@@ -30,7 +30,7 @@
         <zookeeper.version>3.8.0</zookeeper.version>
         <etcd.version>0.7.3</etcd.version>
         <!-- db -->
-        <jedis.version>4.2.3</jedis.version>
+        <jedis.version>4.3.0</jedis.version>
         <redisson.version>3.17.7</redisson.version>
         <lettuce.version>6.2.0.RELEASE</lettuce.version>
         <influxdb-client-java.version>6.5.0</influxdb-client-java.version>
