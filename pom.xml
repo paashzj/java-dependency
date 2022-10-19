@@ -52,7 +52,6 @@
         <!-- apm -->
         <skywalking.version>8.9.1</skywalking.version>
         <!-- other middleware -->
-        <bookkeeper.version>4.14.4</bookkeeper.version>
         <quartz.version>2.3.2</quartz.version>
         <!-- index -->
         <lucene.version>8.11.2</lucene.version>
@@ -347,16 +346,6 @@
                 <version>${skywalking.version}</version>
             </dependency>
             <!-- other middleware -->
-            <dependency>
-                <groupId>org.apache.bookkeeper</groupId>
-                <artifactId>bookkeeper-common</artifactId>
-                <version>${bookkeeper.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.bookkeeper</groupId>
-                <artifactId>bookkeeper-server</artifactId>
-                <version>${bookkeeper.version}</version>
-            </dependency>
             <!-- quartz start -->
             <dependency>
                 <groupId>org.quartz-scheduler</groupId>
