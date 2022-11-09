@@ -38,7 +38,7 @@
         <mongo-driver-sync.version>4.7.2</mongo-driver-sync.version>
         <postgresql.version>42.5.0</postgresql.version>
         <mysql-connector.version>8.0.30</mysql-connector.version>
-        <mariadb-java-client.version>2.7.6</mariadb-java-client.version>
+        <mariadb-java-client.version>2.7.7</mariadb-java-client.version>
         <h2.version>2.1.214</h2.version>
         <calcite.version>1.32.0</calcite.version>
         <!-- message queue -->
