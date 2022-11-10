@@ -31,7 +31,7 @@
         <etcd.version>0.7.3</etcd.version>
         <!-- db -->
         <jedis.version>4.3.1</jedis.version>
-        <redisson.version>3.17.7</redisson.version>
+        <redisson.version>3.18.0</redisson.version>
         <lettuce.version>6.2.1.RELEASE</lettuce.version>
         <influxdb-client-java.version>6.7.0</influxdb-client-java.version>
         <iotdb.version>0.13.0</iotdb.version>
