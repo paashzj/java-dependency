@@ -28,7 +28,7 @@
         <!-- distribute -->
         <curator.version>5.4.0</curator.version>
         <zookeeper.version>3.8.0</zookeeper.version>
-        <etcd.version>0.7.3</etcd.version>
+        <etcd.version>0.7.5</etcd.version>
         <!-- db -->
         <jedis.version>4.3.1</jedis.version>
         <redisson.version>3.18.1</redisson.version>
