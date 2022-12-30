@@ -17,7 +17,7 @@
         <springboot.version>3.0.1</springboot.version>
         <springdoc.version>1.6.13</springdoc.version>
         <!-- servicecomb -->
-        <servicecomb.version>2.8.3</servicecomb.version>
+        <servicecomb.version>2.8.4</servicecomb.version>
         <kubectl.version>17.0.0</kubectl.version>
         <caffeine.version>2.9.3</caffeine.version>
         <guava.version>31.1-jre</guava.version>
