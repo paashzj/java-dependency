@@ -44,7 +44,7 @@
         <qpid-jms-client.version>2.1.0</qpid-jms-client.version>
         <amqp-client.version>5.16.0</amqp-client.version>
         <pravega.version>0.12.0</pravega.version>
-        <pulsar.version>2.10.2</pulsar.version>
+        <pulsar.version>2.10.3</pulsar.version>
         <rocketmq.version>4.9.3</rocketmq.version>
         <!-- config center -->
         <apollo.version>2.0.1</apollo.version>
